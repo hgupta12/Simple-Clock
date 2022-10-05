@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.day {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.date {
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand {
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  transform-origin: left;
+}
+
+#hour {
+  width: 60px;
+  transform: rotate(-90deg);
+  
+}
+#minute {
+  transform: rotate(-90deg);
+  width: 100px;
+  
+}
+#second {
+  width: 100px;
+  transform: rotate(-90deg);
+  background-color: red;
+  
+}
+
+.center {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid red;
+  position: relative;
+  z-index: 10;
+}
+
+/* themes */
+/* light */
+body.light {
+  background-color: #fff;
+}
+
+.light .btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.light .time {
+  color: #000;
+}
+
+.light .day {
+  color: gray;
+}
+
+.light .date {
+  background-color: #000;
+  color: white;
+}
+
+.light .hand {
+  background-color: #000;
+}
+
+.light .center {
+  background-color: #000;
+}
+/* dark */
+body.dark {
+  background-color: #000;
+}
+
+.dark .btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark .time {
+  color: #fff;
+}
+
+.dark .day {
+  color: gray;
+}
+
+.dark .date {
+  background-color: #fff;
+}
+
+.dark .hand {
+  background-color: #fff;
+}
+
+.dark .center {
+  background-color: #fff;
+}
